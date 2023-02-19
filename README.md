@@ -2,7 +2,7 @@
 
 ## Nest.js + Apollo Studio
 
-There are three projects inside this repo. One is the **federation gateway**, which is served at port `3001` the other two are the **graphql node services**, that are served at port `6001` and `6002`
+There are three projects inside this repo. One is the **federation gateway**, which is served at port `http://localhost:3001/graphql` the other two are the **graphql node services**, that are served at port `http://localhost:6001/graphql` and `http://localhost:6002/graphql`
 <p align="center"><img style="display: block; width: 600px; margin: 0 auto;" src=img/2023-02-19-11-08-07.png alt="no image found"></p>
 
 
@@ -58,5 +58,14 @@ cd nest-federation-gateway && npm install && npm start
 | remove deployment dependency between gateway and graphql services                                                              |        ✅        |                        |
 | federated schema will be updated in realtime if sub graph get updated (no need to redeploy gateway to update federated schema) |        ✅        |                        |
 
+
+
+### Service Url List
+
+| service | url                           |
+| ------- | ----------------------------- |
+| gateway | http://localhost:3001/graphql |
+| users   | http://localhost:6001/graphql |
+| posts   | http://localhost:6002/graphql |
 
 
